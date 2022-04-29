@@ -1,0 +1,18 @@
+[requires]
+boost/1.77.0
+fmt/8.1.1
+simdjson/1.0.2
+openssl/1.1.1n
+certify/cci.20201114
+
+[generators]
+cmake
+cmake_find_package
+
+[options]
+boost:shared=True # necessary to use Boost Log in dlls
+fmt:header_only=True
+fmt:with_fmt_alias=True
+
+[imports]
+bin, *.dll -> ./bin

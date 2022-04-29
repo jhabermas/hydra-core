@@ -1,0 +1,53 @@
+#pragma once
+
+#include <string>
+#include <string_view>
+#include <chrono>
+#include <ctime>
+
+namespace hydra::version {
+    constexpr std::string_view semver() {
+        return "@HYDRA_PACKAGE_VERSION@";
+    }
+
+    constexpr std::string_view revision() {
+        return "@_GIT_COMMIT_HASH@";
+    }
+
+    constexpr std::string_view revision_abbrev() {
+        return "@_GIT_COMMIT_HASH_ABBREV@";
+    }
+
+    constexpr std::string_view branch() {
+        return "@_GIT_BRANCH_NAME@";
+    }
+
+    constexpr std::string_view patch() {
+        return "@_GIT_COMMIT_HEIGHT@";
+    }
+
+    constexpr bool local_changes() {
+        return @IS_DIRTY@;
+    }
+
+    constexpr std::string_view build_number() {
+        return "@CI_BUILD_NUMBER@";
+    }
+
+    constexpr std::string_view build_id() {
+        return "@CI_BUILD_ID@";
+    }
+
+    inline std::chrono::time_point<std::chrono::system_clock> build_timestamp() {
+        return std::chrono::system_clock::from_time_t(@TIMESTAMP@);
+    }
+
+    inline std::string build_timestamp_string() {
+        std::time_t t = std::chrono::system_clock::to_time_t(build_timestamp());
+        return std::ctime(&t);
+    }
+
+    constexpr std::string_view copyright() {
+        return "Copyright 2021 jhabermas <jhrc2@protonmail.com>. All rights reserved";
+    }
+}

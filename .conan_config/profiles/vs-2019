@@ -1,0 +1,9 @@
+include(vs-default)
+
+[build_requires]
+[settings]
+flirboson:compiler.version=16
+flirboson:compiler.toolset=ClangCL
+compiler.version=16
+[options]
+[env]

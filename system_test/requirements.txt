@@ -1,0 +1,12 @@
+azure-storage-blob
+build
+cryptography
+flake8
+numpy
+open3d
+opencv-python
+opencv-contrib-python
+pytest
+pytest-asyncio
+scipy
+websockets

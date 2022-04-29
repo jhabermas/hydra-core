@@ -1,0 +1,12 @@
+[build_requires]
+[settings]
+arch=x86_64
+arch_build=x86_64
+os=Windows
+os_build=Windows
+flirboson:compiler=Visual Studio
+flirboson:compiler.toolset=LLVM
+compiler=Visual Studio
+build_type=Release
+[options]
+[env]

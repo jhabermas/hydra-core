@@ -1,0 +1,7 @@
+include(clang)
+
+[settings]
+compiler.version=11
+[options]
+[build_requires]
+[env]

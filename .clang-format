@@ -1,0 +1,65 @@
+Language: Cpp
+Standard: Cpp11
+BasedOnStyle: LLVM
+
+IndentWidth: 4
+TabWidth: 4
+ContinuationIndentWidth: 2
+AccessModifierOffset: -4
+UseTab: Never
+ColumnLimit: 120
+
+AlignAfterOpenBracket: AlwaysBreak
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignEscapedNewlines: Right
+AlignTrailingComments: true
+AlignOperands: false
+
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: false
+
+AlwaysBreakTemplateDeclarations: true
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeTernaryOperators: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterClass: false
+    AfterControlStatement: false
+    AfterEnum: false
+    AfterFunction: false
+    AfterNamespace: false
+    AfterStruct: false
+    AfterUnion: false
+    #AfterExternBlock: true
+    BeforeCatch: false
+    BeforeElse: false
+BreakConstructorInitializers: AfterColon
+BreakConstructorInitializersBeforeComma: true
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+BinPackArguments: true
+BinPackParameters: true
+Cpp11BracedListStyle: true
+
+CompactNamespaces: false
+NamespaceIndentation: Inner
+FixNamespaceComments: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+
+IndentCaseLabels: false
+#IndentPPDirectives: AfterHash
+PointerAlignment: Left
+ReflowComments: true
+
+# but also don't use C style casts!!
+SpaceAfterCStyleCast: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
